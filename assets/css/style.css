@@ -20,7 +20,10 @@ a:hover {
     text-decoration: none;
     font-size: 1.5rem;
 }
-
+button{
+    font-size: 1.6rem;
+    padding: .5rem 2rem;
+}
 p {
     font-size: 1.6rem;
 }
@@ -54,6 +57,54 @@ strong {
     font-size: 1.6rem;
 }
 
+.w-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem 4.5rem;
+    border-radius: 40px;
+    color: var(--white);
+    border: 1px solid #fff;
+    background: linear-gradient(to right, #0054A6, #00A8EA);
+    box-shadow: 4px 4px 10px -5px #00A8EA;
+    transition: .3s ease-in-out;
+}
+.w-btn:hover{
+    color: var(--white);
+    box-shadow: none;
+    scale: 1.05;
+}
+
+.section-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+}
+.section-heading h2{
+    position: relative;
+    padding: 0;
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--blue);
+    line-height: 1;
+}
+.section-heading h2:after,
+.section-heading h2:before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100vw;
+    height: 10px;
+    background-color: #ED1651;
+}
+.section-heading h2:after{
+    right: 110%;
+}
+.section-heading h2:before{
+    left: 110%;
+}
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -375,8 +426,201 @@ body {
 
     }
 }
+
 /*
 =======================================
     E-LEARNING SOLUTION SECTION END
+=======================================
+*/
+
+/*
+=======================================
+    PARTICIPATION SECTION START
+=======================================
+*/
+.participate{
+    padding: 5rem 2rem;
+    /* background: linear-gradient(to bottom, #F1F1F2 50%, #fff 0%); */
+}
+
+.participate .pt-content{
+    max-width: 400px;
+    padding: 0 1rem;
+    position: relative;
+    /* isolation: isolate; */
+}
+.participate .pt-content:before{
+    content: "";    
+    position: absolute;
+    top: 50%;
+    right: -8rem;
+    transform: translateY(-50%);
+    width: 100vw;
+    height: calc(100% + 10rem);
+    background-color: #F1F1F2;
+    z-index: -1;
+}
+.participate .pt-content h3{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--blue);
+}
+.participate .pt-content h5{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+
+.participate .pt-content form input{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 2rem 0;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 1rem;
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+    transition: .3s ease-in-out;
+}
+.participate .pt-content form input:focus{
+    scale: 1.05;
+}
+
+.participate form .pt-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.participate .pt-image img{
+    animation: upDown 2s ease-in-out infinite alternate;
+    transition: .4s ease-in-out;
+}
+.participate .pt-image img:hover{
+    scale: 1.1;
+}
+/*
+=======================================
+    PARTICIPATION SECTION END
+=======================================
+*/
+
+/*
+=======================================
+    UPCOMING EVENTS SECTION START
+=======================================
+*/
+.up-event{
+    margin: 5rem 0;
+    padding: 5rem 2rem;
+}
+.up-event .up-cards .up-card{
+    width: calc(100% - 50px);
+    margin: auto;
+    border: 2px solid #00A8EA;
+    border-radius: 2rem;
+    background-color: #fff;
+    padding: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+    transition: .4s ease-in-out;
+}
+.up-event .up-cards .up-card:hover{
+    scale: 1.1;
+}
+.up-event .up-cards .up-card.br-green{
+    border-color: #A6CE39;
+}
+.up-event .up-cards .up-card.br-orange{
+    border-color: #F5821F;
+}
+.up-event .up-cards .up-card.br-blue{
+    border-color: #47A5AF;
+}
+.up-event .up-cards .up-card.br-purple{
+    border-color: #A3238E;
+}
+.up-event .up-cards .up-card.br-skyblue{
+    border-color: #00AEEF;
+}
+.up-event .up-cards .up-card.br-green{
+    border-color: #A6CE39;
+}
+.up-event .up-cards .up-card h4{
+    font-size: 2rem;
+    color: var(--black);
+    font-weight: 600;
+}
+.up-event .up-cards .up-card p{
+    margin: 1.5rem 0;
+}
+/*
+=======================================
+    UPCOMING EVENTS SECTION END
+=======================================
+*/
+
+/*
+=======================================
+    NEWS EVENTS SECTION START
+=======================================
+*/
+.news-event{
+    padding: 5rem 2rem;
+}
+
+.ne-card{
+    background-color: #F1F1F2;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    padding: 1.4rem 2.5rem;
+    padding-left: 3rem;
+    margin: 2rem 0;
+    box-shadow: 3px 5px 20px -5px rgba(0,0,0,0.3) ;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+}
+.ne-card:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3%;
+    background-color: #ED1651;
+    transition: .7s ease-in-out;
+    z-index: -1;
+
+}
+.ne-card:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.ne-card:hover:before{
+    width: 100%;
+    
+}
+.ne-card .card-content{
+    max-width: 250px;
+}
+.ne-card .card-content h5{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.ne-card .data-label{
+    padding: .3rem 1.5rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #fff;
+    background: linear-gradient(to right, #0054A6, #00A5E7);
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+/*
+=======================================
+    NEWS EVENTS SECTION END
 =======================================
 */
