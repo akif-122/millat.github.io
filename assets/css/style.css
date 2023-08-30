@@ -20,10 +20,12 @@ a:hover {
     text-decoration: none;
     font-size: 1.5rem;
 }
-button{
+
+button {
     font-size: 1.6rem;
     padding: .5rem 2rem;
 }
+
 p {
     font-size: 1.6rem;
 }
@@ -57,7 +59,7 @@ strong {
     font-size: 1.6rem;
 }
 
-.w-btn{
+.w-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,28 +71,31 @@ strong {
     box-shadow: 4px 4px 10px -5px #00A8EA;
     transition: .3s ease-in-out;
 }
-.w-btn:hover{
+
+.w-btn:hover {
     color: var(--white);
     box-shadow: none;
     scale: 1.05;
 }
 
-.section-heading{
+.section-heading {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 4rem 0;
 }
-.section-heading h2{
+
+.section-heading h2 {
     position: relative;
     padding: 0;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     font-weight: 600;
     color: var(--blue);
     line-height: 1;
 }
+
 .section-heading h2:after,
-.section-heading h2:before{
+.section-heading h2:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -99,12 +104,15 @@ strong {
     height: 10px;
     background-color: #ED1651;
 }
-.section-heading h2:after{
+
+.section-heading h2:after {
     right: 110%;
 }
-.section-heading h2:before{
+
+.section-heading h2:before {
     left: 110%;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -320,21 +328,25 @@ body {
     font-size: inherit;
     color: #ED1651;
 }
-.lib-cards{
+
+.lib-cards {
     margin-top: 4rem;
 }
-.lib-card{
+
+.lib-card {
     text-align: center;
     margin: 2.5rem 0;
     padding: 1.5rem .5rem;
     border-radius: .8rem;
     transition: .4s ease-in-out;
 }
-.lib-card:hover{
+
+.lib-card:hover {
     scale: 1.1;
-    box-shadow: 0 4px 20px -5px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.3);
 }
-.lib-card .card-icon{
+
+.lib-card .card-icon {
     margin: 0 auto;
     margin-bottom: 2rem;
     border-radius: 50%;
@@ -350,27 +362,38 @@ body {
     justify-content: center;
     animation: rotate 3s linear forwards infinite;
 }
-.lib-card .card-icon .icon-inner{
+
+.lib-card .card-icon .icon-inner {
     animation: altRotate 3s linear forwards infinite;
 
 }
 
-@keyframes rotate{
-    to{
+@keyframes rotate {
+    to {
         transform: rotate(360deg);
     }
 }
-@keyframes altRotate{
-    to{
+
+@keyframes altRotate {
+    to {
         transform: rotate(-360deg);
     }
 }
 
-.lib-card .card-content h4{
+.lib-card .card-content h4 {
     font-size: 2.2rem;
     font-weight: 600;
     color: var(--blue);
 }
+
+@media (max-width: 767px) {
+
+    .lib-card .card-icon {
+        width: 120px;
+        height: 120px;
+    }
+}
+
 
 /*
 =======================================
@@ -382,46 +405,52 @@ body {
     E-LEARNING SOLUTION SECTION START
 =======================================
 */
-.e-learning{
+.e-learning {
     padding: 5rem 2rem;
     background-color: #E1F4FD;
     margin-bottom: 4rem;
 }
 
-.e-learning .e-learning-content h2{
+.e-learning .e-learning-content h2 {
     font-size: 4.4rem;
     font-weight: 600;
     color: var(--blue);
 }
-.e-learning .e-learning-content h2 span{
+
+.e-learning .e-learning-content h2 span {
     font-size: inherit;
     color: #ED1651;
 }
-.e-learning .e-learning-content h5{
+
+.e-learning .e-learning-content h5 {
     font-size: 1.8rem;
     text-align: justify;
     line-height: 1.5;
     margin: 2rem 0;
 }
-.e-learning .e-learning-content p{
+
+.e-learning .e-learning-content p {
     font-size: 1.5rem;
     text-align: justify;
     margin: 2rem 0;
 }
-.e-learning .e-learning-img img{
+
+.e-learning .e-learning-img img {
     width: 100%;
     animation: upDown 2s ease-in-out infinite alternate;
     transition: .4s ease-in-out;
 }
-.e-learning .e-learning-img img:hover{
+
+.e-learning .e-learning-img img:hover {
     scale: 1.1;
 }
 
-@keyframes upDown{
-    from{
+@keyframes upDown {
+    from {
         transform: translateY(-20px);
     }
-    to{
+
+    to {
         transform: translateY(20px);
 
     }
@@ -438,19 +467,20 @@ body {
     PARTICIPATION SECTION START
 =======================================
 */
-.participate{
+.participate {
     padding: 5rem 2rem;
     /* background: linear-gradient(to bottom, #F1F1F2 50%, #fff 0%); */
 }
 
-.participate .pt-content{
+.participate .pt-content {
     max-width: 400px;
     padding: 0 1rem;
     position: relative;
     /* isolation: isolate; */
 }
-.participate .pt-content:before{
-    content: "";    
+
+.participate .pt-content:before {
+    content: "";
     position: absolute;
     top: 50%;
     right: -8rem;
@@ -460,18 +490,20 @@ body {
     background-color: #F1F1F2;
     z-index: -1;
 }
-.participate .pt-content h3{
+
+.participate .pt-content h3 {
     font-size: 2.8rem;
     font-weight: 600;
     color: var(--blue);
 }
-.participate .pt-content h5{
+
+.participate .pt-content h5 {
     font-size: 1.7rem;
     font-weight: 600;
     margin: 2rem 0;
 }
 
-.participate .pt-content form input{
+.participate .pt-content form input {
     font-size: 1.6rem;
     font-weight: 500;
     margin: 2rem 0;
@@ -482,24 +514,40 @@ body {
     border: 2px solid var(--blue);
     transition: .3s ease-in-out;
 }
-.participate .pt-content form input:focus{
+
+.participate .pt-content form input:focus {
     scale: 1.05;
 }
 
-.participate form .pt-btn{
+.participate form .pt-btn {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
 }
 
-.participate .pt-image img{
+.participate .pt-image img {
     animation: upDown 2s ease-in-out infinite alternate;
     transition: .4s ease-in-out;
 }
-.participate .pt-image img:hover{
+
+.participate .pt-image img:hover {
     scale: 1.1;
 }
+
+@media (max-width: 767px){
+    .participate .pt-content{
+        max-width: 100%;
+    }
+    .participate .pt-content:before {
+        right: 50%;
+        transform: translateY(-50%) translateX(50%);
+    }
+    .participate .pt-image {
+        margin-top: 8rem;
+    }
+}
+
 /*
 =======================================
     PARTICIPATION SECTION END
@@ -511,60 +559,78 @@ body {
     UPCOMING EVENTS SECTION START
 =======================================
 */
-.up-event{
+.up-event {
     margin: 5rem 0;
     padding: 5rem 2rem;
 }
-.up-event .up-cards .up-card{
+
+.up-event .up-cards .up-card {
     width: calc(100% - 50px);
-    margin: auto;
     border: 2px solid #00A8EA;
     border-radius: 2rem;
     background-color: #fff;
     padding: 4rem 3rem;
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem auto;
     transition: .4s ease-in-out;
 }
-.up-event .up-cards .up-card.bg-card{
-    background: linear-gradient(rgba(237, 22, 81, .85),rgba(237, 22, 81, .85)), url("../img/event.jpg");
+
+.up-event .up-cards .up-card.bg-card {
+    background: linear-gradient(rgba(237, 22, 81, .85), rgba(237, 22, 81, .85)), url("../img/event.jpg");
     background-position: center;
     background-size: cover;
     border-color: transparent;
     color: var(--white);
 }
-.up-event .up-cards .up-card.bg-card h4{
+
+.up-event .up-cards .up-card.bg-card h4 {
     color: var(--white);
 }
-.up-event .up-cards .up-card:hover{
+
+.up-event .up-cards .up-card:hover {
     scale: 1.1;
 }
-.up-event .up-cards .up-card.br-green{
+
+.up-event .up-cards .up-card.br-green {
     border-color: #A6CE39;
 }
-.up-event .up-cards .up-card.br-orange{
+
+.up-event .up-cards .up-card.br-orange {
     border-color: #F5821F;
 }
-.up-event .up-cards .up-card.br-blue{
+
+.up-event .up-cards .up-card.br-blue {
     border-color: #47A5AF;
 }
-.up-event .up-cards .up-card.br-purple{
+
+.up-event .up-cards .up-card.br-purple {
     border-color: #A3238E;
 }
-.up-event .up-cards .up-card.br-skyblue{
+
+.up-event .up-cards .up-card.br-skyblue {
     border-color: #00AEEF;
 }
-.up-event .up-cards .up-card.br-green{
+
+.up-event .up-cards .up-card.br-green {
     border-color: #A6CE39;
 }
-.up-event .up-cards .up-card h4{
+
+.up-event .up-cards .up-card h4 {
     font-size: 2rem;
     color: var(--black);
     font-weight: 600;
 }
-.up-event .up-cards .up-card p{
+
+.up-event .up-cards .up-card p {
     margin: 1.5rem 0;
     font-weight: 300;
+}
+
+@media (max-width: 767px){
+    .up-event .up-cards .up-card {
+        width: calc(100% - 20px);
+       
+    }
 }
 /*
 =======================================
@@ -577,24 +643,25 @@ body {
     NEWS EVENTS SECTION START
 =======================================
 */
-.news-event{
+.news-event {
     padding: 5rem 2rem;
 }
 
-.ne-card{
+.ne-card {
     background-color: #F1F1F2;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     padding: 1.4rem 2.5rem;
     padding-left: 3rem;
     margin: 2rem 0;
-    box-shadow: 3px 5px 20px -5px rgba(0,0,0,0.3) ;
+    box-shadow: 3px 5px 20px -5px rgba(0, 0, 0, 0.3);
     position: relative;
     isolation: isolate;
     overflow: hidden;
     transition: .4s ease-in-out;
 }
-.ne-card:before{
+
+.ne-card:before {
     content: "";
     position: absolute;
     left: 0;
@@ -606,22 +673,27 @@ body {
     z-index: -1;
 
 }
-.ne-card:hover{
+
+.ne-card:hover {
     scale: 1.05;
     color: #fff;
 }
-.ne-card:hover:before{
+
+.ne-card:hover:before {
     width: 100%;
-    
+
 }
-.ne-card .card-content{
+
+.ne-card .card-content {
     max-width: 250px;
 }
-.ne-card .card-content h5{
+
+.ne-card .card-content h5 {
     font-size: 1.8rem;
     font-weight: 600;
 }
-.ne-card .data-label{
+
+.ne-card .data-label {
     padding: .3rem 1.5rem;
     font-size: 1.4rem;
     font-weight: 300;
@@ -630,6 +702,7 @@ body {
     border-radius: 50px;
     margin-right: 1rem;
 }
+
 /*
 =======================================
     NEWS EVENTS SECTION END
@@ -641,19 +714,21 @@ body {
     CONTACT SECTION START
 =======================================
 */
-.contact{
+.contact {
     margin: 5rem 0;
     background-color: #E1F4FD;
     overflow: hidden;
 }
-.contact .contact-content{
+
+.contact .contact-content {
     padding: 5rem 2rem;
     padding: 1rem;
     height: 100%;
     position: relative;
     isolation: isolate;
 }
-.contact .contact-content::after{
+
+.contact .contact-content::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -664,39 +739,47 @@ body {
     background-color: #034EA2;
     z-index: -1;
 }
-.contact .contact-content .contact-image{
-    max-width: 250px ;
+
+.contact .contact-content .contact-image {
+    max-width: 250px;
     margin: 4rem auto;
 }
-.contact .contact-content .contact-image img{
+
+.contact .contact-content .contact-image img {
     width: 100%;
 }
-.contact .contact-content h2{
+
+.contact .contact-content h2 {
     font-size: 4rem;
     font-weight: 600;
     color: #FFCB04;
     text-transform: uppercase;
     margin-bottom: 4rem;
 }
-.contact .contact-content p{
+
+.contact .contact-content p {
     color: #fff;
 }
-.contact .contact-content p i{
+
+.contact .contact-content p i {
     color: #00AEEF;
     font-size: 1.5rem;
     margin-right: .5rem;
 }
-.contact .contact-form{
+
+.contact .contact-form {
     padding: 5rem 0;
 }
-.contact .contact-form h5{
+
+.contact .contact-form h5 {
     font-size: 2.2rem;
     color: #000;
     font-weight: 600;
     margin: 4rem 0;
 }
+
 .contact .contact-form form textarea,
-.contact .contact-form form input{
+.contact .contact-form form input {
     padding: 1rem;
     color: var(--blue);
     background-color: var(--white);
@@ -707,6 +790,15 @@ body {
     margin: 2rem 0;
     border-radius: 0;
 }
+
+@media (max-width: 767px){
+    .contact .contact-content::after {
+        right: 50%;
+        transform: translateY(-50%) translateX(50%);
+      
+    }
+}
+
 /*
 =======================================
     CONTACT SECTION END
@@ -718,31 +810,51 @@ body {
    FOOTER SECTION START
 =======================================
 */
-.footer{
+.footer {
     padding: 4rem 2rem;
     background-color: var(--blue);
 }
-.footer h3{
+
+.footer h3 {
     font-size: 2.6rem;
     color: var(--white);
     margin: 2rem 0;
 }
-.footer p{
+
+.footer p {
     color: var(--half-white);
 }
+
 .footer ul li {
     margin: .5rem 0;
 }
-.footer ul li a{
+
+.footer ul li a {
     font-size: 1.5rem;
     color: var(--half-white);
 }
-.footer ul li a i{
+
+.footer ul li a i {
     margin-right: 1rem;
     font-size: 1.5rem;
 }
+
 /*
 =======================================
    FOOTER SECTION END
 =======================================
 */
+
+
+
+@media (max-width: 991px) {
+    * {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 767px) {
+    * {
+        font-size: 45%;
+    }
+}
