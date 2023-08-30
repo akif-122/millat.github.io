@@ -1,0 +1,382 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --half-white: #dddbd1;
+    --blue: #034EA2;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.4rem;
+}
+
+span,
+strong {
+    font-size: 1.6rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+/*
+===================================
+    NAVBAR SECTION START
+===================================
+*/
+.navTop {
+    position: sticky;
+    top: 0;
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    background-color: var(--white);
+    box-shadow: 0 4px 20px -18px grey;
+    z-index: 1000;
+}
+
+#topNav .navbar-brand img {
+    width: 200px;
+}
+
+#topNav ul li {
+    margin: 0 .5rem;
+}
+
+#topNav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black);
+    transition: .4s ease-in-out;
+}
+
+#topNav ul li a:is(:hover, .active) {
+    color: var(--blue);
+}
+
+/*
+===================================
+    NAVBAR SECTION END  
+===================================
+*/
+/*
+===================================
+    HEADER SECTION START  
+===================================
+*/
+#header {
+    padding: 10rem 2rem;
+    background: url("../img/header-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    isolation: isolate;
+}
+
+#header:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #001C42, #004C72);
+    opacity: .8;
+    z-index: -2;
+}
+
+#header:before {
+    content: "";
+    position: absolute;
+    left: -40%;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, .5) 50%, rgba(255, 255, 255, 0));
+    z-index: -3;
+    animation: overlay 4s ease-in-out infinite forwards;
+}
+
+@keyframes overlay {
+    to {
+        left: 100%;
+    }
+}
+
+#header .header-content h4 {
+    font-size: 2.6rem;
+    color: var(--white);
+    font-weight: 400;
+}
+
+#header .header-content h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 2rem 0;
+    color: #fed330;
+}
+
+#header .header-content p {
+    font-size: 1.8rem;
+    color: var(--half-white);
+}
+
+#header .header-content .header-btn {
+    margin-top: 5rem;
+}
+
+#header .header-content .header-btn a {
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    background-color: transparent;
+    color: var(--white);
+    font-weight: 500;
+    border: 1px solid var(--white);
+    display: inline-block;
+    position: relative;
+    isolation: isolate;
+    transition: .5s ease-in-out;
+}
+
+#header .header-content .header-btn a:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--white);
+    scale: 0 1;
+    transform-origin: right;
+    transition: scale .4s ease-in-out;
+    z-index: -1;
+}
+
+#header .header-content .header-btn a:hover {
+    color: var(--blue);
+}
+
+#header .header-content .header-btn a:hover:before {
+    transform-origin: left;
+    scale: 1 1;
+
+}
+
+
+/*
+===================================
+    HEADER SECTION END  
+===================================
+*/
+
+/*
+=======================================
+    LEARNING LIBERARY SECTION START  
+=======================================
+*/
+.liberary {
+    margin: 10rem 2rem;
+}
+
+.liberary .liberary-heading {
+    padding: 0 1rem;
+    max-width: 530px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+.liberary .liberary-heading:after,
+.liberary .liberary-heading::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-color: #034EA2;
+}
+
+.liberary .liberary-heading:after {
+    right: 100%;
+    top: 0;
+    animation: after 2s ease-in-out infinite alternate;
+}
+
+@keyframes after {
+    to {
+        scale: .9;
+    }
+}
+
+.liberary .liberary-heading::before {
+    left: 100%;
+    top: 0;
+    animation: before 2s ease-in-out infinite alternate;
+}
+
+@keyframes before {
+    to {
+        scale: .9;
+
+    }
+}
+
+.liberary .liberary-heading h2 {
+    color: var(--black);
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.liberary .liberary-heading h2 span {
+    font-size: inherit;
+    color: #ED1651;
+}
+.lib-cards{
+    margin-top: 4rem;
+}
+.lib-card{
+    text-align: center;
+    margin: 2.5rem 0;
+    padding: 1.5rem .5rem;
+    border-radius: .8rem;
+    transition: .4s ease-in-out;
+}
+.lib-card:hover{
+    scale: 1.1;
+    box-shadow: 0 4px 20px -5px rgba(0,0,0,0.3);
+}
+.lib-card .card-icon{
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    border: 8px solid;
+    border-top-color: #E31B22;
+    border-bottom-color: #00AEEF;
+    border-left-color: #F5821F;
+    border-right-color: #A6CE39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 3s linear forwards infinite;
+}
+.lib-card .card-icon .icon-inner{
+    animation: altRotate 3s linear forwards infinite;
+
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes altRotate{
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.lib-card .card-content h4{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+/*
+=======================================
+    LEARNING LIBERARY SECTION END  
+=======================================
+*/
+/*
+=======================================
+    E-LEARNING SOLUTION SECTION START
+=======================================
+*/
+.e-learning{
+    padding: 5rem 2rem;
+    background-color: #E1F4FD;
+    margin-bottom: 4rem;
+}
+
+.e-learning .e-learning-content h2{
+    font-size: 4.4rem;
+    font-weight: 600;
+    color: var(--blue);
+}
+.e-learning .e-learning-content h2 span{
+    font-size: inherit;
+    color: #ED1651;
+}
+.e-learning .e-learning-content h5{
+    font-size: 1.8rem;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 2rem 0;
+}
+.e-learning .e-learning-content p{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 2rem 0;
+}
+.e-learning .e-learning-img img{
+    width: 100%;
+    animation: upDown 2s ease-in-out infinite alternate;
+    transition: .4s ease-in-out;
+}
+.e-learning .e-learning-img img:hover{
+    scale: 1.1;
+}
+
+@keyframes upDown{
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(20px);
+
+    }
+}
+/*
+=======================================
+    E-LEARNING SOLUTION SECTION END
+=======================================
+*/
