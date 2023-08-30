@@ -521,10 +521,20 @@ body {
     border: 2px solid #00A8EA;
     border-radius: 2rem;
     background-color: #fff;
-    padding: 3rem;
+    padding: 4rem 3rem;
     text-align: center;
     margin: 2rem 0;
     transition: .4s ease-in-out;
+}
+.up-event .up-cards .up-card.bg-card{
+    background: linear-gradient(rgba(237, 22, 81, .85),rgba(237, 22, 81, .85)), url("../img/event.jpg");
+    background-position: center;
+    background-size: cover;
+    border-color: transparent;
+    color: var(--white);
+}
+.up-event .up-cards .up-card.bg-card h4{
+    color: var(--white);
 }
 .up-event .up-cards .up-card:hover{
     scale: 1.1;
@@ -554,6 +564,7 @@ body {
 }
 .up-event .up-cards .up-card p{
     margin: 1.5rem 0;
+    font-weight: 300;
 }
 /*
 =======================================
@@ -622,5 +633,116 @@ body {
 /*
 =======================================
     NEWS EVENTS SECTION END
+=======================================
+*/
+
+/*
+=======================================
+    CONTACT SECTION START
+=======================================
+*/
+.contact{
+    margin: 5rem 0;
+    background-color: #E1F4FD;
+    overflow: hidden;
+}
+.contact .contact-content{
+    padding: 5rem 2rem;
+    padding: 1rem;
+    height: 100%;
+    position: relative;
+    isolation: isolate;
+}
+.contact .contact-content::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: translateY(-50%);
+    height: calc(100% + 5rem);
+    width: 100vw;
+    background-color: #034EA2;
+    z-index: -1;
+}
+.contact .contact-content .contact-image{
+    max-width: 250px ;
+    margin: 4rem auto;
+}
+.contact .contact-content .contact-image img{
+    width: 100%;
+}
+.contact .contact-content h2{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #FFCB04;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.contact .contact-content p{
+    color: #fff;
+}
+.contact .contact-content p i{
+    color: #00AEEF;
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+.contact .contact-form{
+    padding: 5rem 0;
+}
+.contact .contact-form h5{
+    font-size: 2.2rem;
+    color: #000;
+    font-weight: 600;
+    margin: 4rem 0;
+}
+.contact .contact-form form textarea,
+.contact .contact-form form input{
+    padding: 1rem;
+    color: var(--blue);
+    background-color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: 2px solid var(--blue);
+    box-shadow: none;
+    margin: 2rem 0;
+    border-radius: 0;
+}
+/*
+=======================================
+    CONTACT SECTION END
+=======================================
+*/
+
+/*
+=======================================
+   FOOTER SECTION START
+=======================================
+*/
+.footer{
+    padding: 4rem 2rem;
+    background-color: var(--blue);
+}
+.footer h3{
+    font-size: 2.6rem;
+    color: var(--white);
+    margin: 2rem 0;
+}
+.footer p{
+    color: var(--half-white);
+}
+.footer ul li {
+    margin: .5rem 0;
+}
+.footer ul li a{
+    font-size: 1.5rem;
+    color: var(--half-white);
+}
+.footer ul li a i{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+/*
+=======================================
+   FOOTER SECTION END
 =======================================
 */
